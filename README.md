@@ -181,3 +181,4 @@ figura que segue:
 
 ![Produtor de dados](images/dataconsumer.png)
 
+# Projeto---QtSupervisory
