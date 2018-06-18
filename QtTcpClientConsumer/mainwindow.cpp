@@ -62,8 +62,10 @@ void MainWindow::getData(){
         if(list.size() == 2){
           bool ok;
           str = list.at(0);
+          tempo.push_back(str.toFloat());
           thetime = str.toLongLong(&ok);
           str = list.at(1);
+          valor.push_back(str.toFloat());
           qDebug() << thetime << ": " << str;
         }
       }
