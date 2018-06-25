@@ -174,7 +174,7 @@ void MainWindow::getList(){
             qDebug() << "reading...";
             socket->write("list");
             socket->waitForBytesWritten();
-            socket->waitForReadyRead();
+            socket->waitForReadyRead(1000);
             while(socket->bytesAvailable()){
                 str = socket->readLine().replace("\n","").replace("\r","");
                 ui->listWidget->addItem(str);
