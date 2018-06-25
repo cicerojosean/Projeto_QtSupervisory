@@ -1,0 +1,81 @@
+\hypertarget{class_main_window}{}\section{Main\+Window Class Reference}
+\label{class_main_window}\index{Main\+Window@{Main\+Window}}
+
+
+The \hyperlink{class_main_window}{Main\+Window} class\+: é a classe principal do programa consumidor.  
+
+
+
+
+{\ttfamily \#include $<$mainwindow.\+h$>$}
+
+
+
+Inherits Q\+Main\+Window.
+
+\subsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_main_window_a4a2ddf4cf2ec8e240cc340416b1df792}\label{class_main_window_a4a2ddf4cf2ec8e240cc340416b1df792}} 
+void \hyperlink{class_main_window_a4a2ddf4cf2ec8e240cc340416b1df792}{get\+Data} ()
+\begin{DoxyCompactList}\small\item\em get\+Data\+: Método para obtenção dos dados de um cliente que se conectou em um servidor especificado \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_main_window_a62000ffa1534df6799cb64acc977e285}\label{class_main_window_a62000ffa1534df6799cb64acc977e285}} 
+void \hyperlink{class_main_window_a62000ffa1534df6799cb64acc977e285}{conectar} ()
+\begin{DoxyCompactList}\small\item\em conectar\+: Método para conectar o programa ao Servidor \+: Necessário fornecer um um IP para a conexão \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_main_window_a44cae809331c23b6fdce421d11add74d}\label{class_main_window_a44cae809331c23b6fdce421d11add74d}} 
+void \hyperlink{class_main_window_a44cae809331c23b6fdce421d11add74d}{desconectar} ()
+\begin{DoxyCompactList}\small\item\em desconectar\+: Método para desconectar o programa do servidor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_main_window_a0a96397a2da7a7e1c49d59b6bc1f72a7}\label{class_main_window_a0a96397a2da7a7e1c49d59b6bc1f72a7}} 
+void \hyperlink{class_main_window_a0a96397a2da7a7e1c49d59b6bc1f72a7}{get\+List} ()
+\begin{DoxyCompactList}\small\item\em get\+List\+: Método para listar os computadores que geraram dados ao servidor conectado. \end{DoxyCompactList}\item 
+void \hyperlink{class_main_window_a6ab0b8fe470b5a5d992fd4a2c3bcf884}{Start\+Timer} ()
+\begin{DoxyCompactList}\small\item\em Start\+Timer\+: Timer que define de quanto em quanto tempo os dados são apresentados no gráfico /$\ast$$\ast$. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_main_window_aece55c280ac690cd215dccb09a40add4}\label{class_main_window_aece55c280ac690cd215dccb09a40add4}} 
+void \hyperlink{class_main_window_aece55c280ac690cd215dccb09a40add4}{muda\+Timer} ()
+\begin{DoxyCompactList}\small\item\em muda\+Timer\+: Método que altera o intervalo de tempo que os dados são obtidos \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_main_window_a939e90ddfe07d74be87b351ca2171fb0}\label{class_main_window_a939e90ddfe07d74be87b351ca2171fb0}} 
+void \hyperlink{class_main_window_a939e90ddfe07d74be87b351ca2171fb0}{stop} ()
+\begin{DoxyCompactList}\small\item\em stop\+: Método que para o recebimento de dados do servidor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_main_window_a799590b27ee9368ec2836084e80e0115}\label{class_main_window_a799590b27ee9368ec2836084e80e0115}} 
+void \hyperlink{class_main_window_a799590b27ee9368ec2836084e80e0115}{muda\+I\+P\+\_\+lista} ()
+\begin{DoxyCompactList}\small\item\em muda\+I\+P\+\_\+lista\+: Método utilizado para que o programa puxe a lista de I\+Ps de um novo servidor escolhido. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_main_window_a11b1eb7d841034cd2f30e369071f2a8e}\label{class_main_window_a11b1eb7d841034cd2f30e369071f2a8e}} 
+vector$<$ float $>$ {\bfseries enviardados} (vector$<$ float $>$, vector$<$ float $>$)
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_main_window_a8b244be8b7b7db1b08de2a2acb9409db}\label{class_main_window_a8b244be8b7b7db1b08de2a2acb9409db}} 
+{\bfseries Main\+Window} (Q\+Widget $\ast$parent=0)
+\item 
+\mbox{\Hypertarget{class_main_window_ac5b669957c442b6eb68573dacfce33e1}\label{class_main_window_ac5b669957c442b6eb68573dacfce33e1}} 
+void {\bfseries tcp\+Connect} ()
+\item 
+\mbox{\Hypertarget{class_main_window_a64b82f5df1188f632d5aef730f0c6d1a}\label{class_main_window_a64b82f5df1188f632d5aef730f0c6d1a}} 
+void {\bfseries timer\+Event} (Q\+Timer\+Event $\ast$time)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{class_main_window}{Main\+Window} class\+: é a classe principal do programa consumidor. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_main_window_a6ab0b8fe470b5a5d992fd4a2c3bcf884}\label{class_main_window_a6ab0b8fe470b5a5d992fd4a2c3bcf884}} 
+\index{Main\+Window@{Main\+Window}!Start\+Timer@{Start\+Timer}}
+\index{Start\+Timer@{Start\+Timer}!Main\+Window@{Main\+Window}}
+\subsubsection{\texorpdfstring{Start\+Timer}{StartTimer}}
+{\footnotesize\ttfamily void Main\+Window\+::\+Start\+Timer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Start\+Timer\+: Timer que define de quanto em quanto tempo os dados são apresentados no gráfico /$\ast$$\ast$. 
+
+/$\ast$$\ast$ $\ast$ 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+mainwindow.\+h\item 
+mainwindow.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,67 @@
+\hypertarget{class_plotter}{}\section{Plotter Class Reference}
+\label{class_plotter}\index{Plotter@{Plotter}}
+
+
+The \hyperlink{class_plotter}{Plotter} class\+: Classe para fazer o Plot dos dados obtidos do servidor.  
+
+
+
+
+{\ttfamily \#include $<$plotter.\+h$>$}
+
+
+
+Inherits Q\+Widget.
+
+\subsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_plotter_ad8f58fe5e3cc3e18c8c0a61339ad8bc9}{receberdados} (vector$<$ float $>$ valor\+\_\+, vector$<$ float $>$ tempo\+\_\+)
+\begin{DoxyCompactList}\small\item\em receberdados\+: Método para o recebimento dos dados que serão lançados no gráfico. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_plotter_a367b6890c36910a27ec710ac3693e64b}\label{class_plotter_a367b6890c36910a27ec710ac3693e64b}} 
+{\bfseries Plotter} (Q\+Widget $\ast$parent=0)
+\item 
+\mbox{\Hypertarget{class_plotter_a06477bf987646f000a8982db1352a11d}\label{class_plotter_a06477bf987646f000a8982db1352a11d}} 
+void {\bfseries paint\+Event} (Q\+Paint\+Event $\ast$event)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_plotter_a153819a693fb5e8755ff5f76dbdee49f}\label{class_plotter_a153819a693fb5e8755ff5f76dbdee49f}} 
+vector$<$ float $>$ {\bfseries tempo}
+\item 
+\mbox{\Hypertarget{class_plotter_ae2b50568c5449ff59745ae10992efbde}\label{class_plotter_ae2b50568c5449ff59745ae10992efbde}} 
+vector$<$ float $>$ {\bfseries valor}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{class_plotter}{Plotter} class\+: Classe para fazer o Plot dos dados obtidos do servidor. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_plotter_ad8f58fe5e3cc3e18c8c0a61339ad8bc9}\label{class_plotter_ad8f58fe5e3cc3e18c8c0a61339ad8bc9}} 
+\index{Plotter@{Plotter}!receberdados@{receberdados}}
+\index{receberdados@{receberdados}!Plotter@{Plotter}}
+\subsubsection{\texorpdfstring{receberdados}{receberdados}}
+{\footnotesize\ttfamily void Plotter\+::receberdados (\begin{DoxyParamCaption}\item[{vector$<$ float $>$}]{valor\+\_\+,  }\item[{vector$<$ float $>$}]{tempo\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+receberdados\+: Método para o recebimento dos dados que serão lançados no gráfico. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em valor\+\_\+} & Valor do dado obtido \\
+\hline
+{\em tempo\+\_\+} & Tempo que o dado foi gerado \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+plotter.\+h\item 
+plotter.\+cpp\end{DoxyCompactItemize}
