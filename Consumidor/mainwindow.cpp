@@ -1,6 +1,7 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include <QDateTime>
+#include <sstream>
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -104,7 +105,7 @@ void MainWindow::getData(){
             qDebug() << "reading...";
             qDebug() <<string_lista;
             if(string_lista!=""){
-                str = "get "+string_lista+" 35\r\n";
+                str = "get "+string_lista+" "+ QVariant(ui->horizontalSlider_dados->value()).toString();+"\r\n";
                 qDebug() << str;
                 socket->write(str.toStdString().c_str());
                 socket->waitForBytesWritten();
@@ -173,7 +174,7 @@ void MainWindow::getList(){
             qDebug() << "reading...";
             socket->write("list");
             socket->waitForBytesWritten();
-            socket->waitForReadyRead();
+            socket->waitForReadyRead(1000);
             while(socket->bytesAvailable()){
                 str = socket->readLine().replace("\n","").replace("\r","");
                 ui->listWidget->addItem(str);

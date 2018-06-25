@@ -40,6 +40,12 @@ void Plotter::paintEvent(QPaintEvent *event){
   // desenha um retangulo tomando toda a area
   // do componente
   painter.drawRect(0,0,width(), height());
+  pen.setStyle(Qt::DotLine);
+  pen.setWidth(1);
+  painter.setPen(pen);
+  for(float i=2.5; i<=30; i=i+2.5){
+  painter.drawLine(0,height()-height()*(float)i/30.0,width(),height()-height()*(float)i/30.0);
+}
 
   // muda o estilo do tracejado
   pen.setStyle(Qt::SolidLine);
@@ -56,8 +62,6 @@ void Plotter::paintEvent(QPaintEvent *event){
                    width()-width()*tempo[i+1],height()-height()*valor[i+1]/30.0);
 
 }
-
-
 
 }
 
