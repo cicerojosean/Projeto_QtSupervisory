@@ -1,0 +1,76 @@
+\hypertarget{class_main_window}{}\section{Main\+Window Class Reference}
+\label{class_main_window}\index{Main\+Window@{Main\+Window}}
+
+
+A Classe \hyperlink{class_main_window}{Main\+Window} é a classe principal do Cliente\+\_\+\+Produtor.  
+
+
+
+
+{\ttfamily \#include $<$mainwindow.\+h$>$}
+
+
+
+Inherits Q\+Main\+Window.
+
+\subsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_main_window_ac5b669957c442b6eb68573dacfce33e1}\label{class_main_window_ac5b669957c442b6eb68573dacfce33e1}} 
+void \hyperlink{class_main_window_ac5b669957c442b6eb68573dacfce33e1}{tcp\+Connect} ()
+\begin{DoxyCompactList}\small\item\em tcp\+Connect\+: Funcão para se conectar ao servidor \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_main_window_afdfeb13ec363b0eb8ecacaf0aa13b605}\label{class_main_window_afdfeb13ec363b0eb8ecacaf0aa13b605}} 
+void \hyperlink{class_main_window_afdfeb13ec363b0eb8ecacaf0aa13b605}{put\+Data} ()
+\begin{DoxyCompactList}\small\item\em put\+Data\+: Gera um dado e escreve no servidor \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_main_window_a2f369d2295ca98bfe9d143ba95544fbf}\label{class_main_window_a2f369d2295ca98bfe9d143ba95544fbf}} 
+void \hyperlink{class_main_window_a2f369d2295ca98bfe9d143ba95544fbf}{muda\+Timing} ()
+\begin{DoxyCompactList}\small\item\em muda\+Timing\+: Altera a velocidade com que os dados são gerados \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_main_window_abe9b2eab84aab26136fdb7ee40fe5c6b}\label{class_main_window_abe9b2eab84aab26136fdb7ee40fe5c6b}} 
+void \hyperlink{class_main_window_abe9b2eab84aab26136fdb7ee40fe5c6b}{muda\+Margem} ()
+\begin{DoxyCompactList}\small\item\em muda\+Margem\+: Muda os valores máximos e mínimos dos dados que serão gerados \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_main_window_a37c87f8835aaa425ea575921a3cd15ac}\label{class_main_window_a37c87f8835aaa425ea575921a3cd15ac}} 
+void \hyperlink{class_main_window_a37c87f8835aaa425ea575921a3cd15ac}{comecar} ()
+\begin{DoxyCompactList}\small\item\em comecar\+: Inicia a produção dos dados \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_main_window_abfb7a4c66aa95cce5d182637e1e1d5d9}\label{class_main_window_abfb7a4c66aa95cce5d182637e1e1d5d9}} 
+void \hyperlink{class_main_window_abfb7a4c66aa95cce5d182637e1e1d5d9}{pausar} ()
+\begin{DoxyCompactList}\small\item\em pausar\+: Pausa a produção dos dados \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_main_window_a99081ab248ec1dea26c70daeb5a2f5e3}\label{class_main_window_a99081ab248ec1dea26c70daeb5a2f5e3}} 
+void \hyperlink{class_main_window_a99081ab248ec1dea26c70daeb5a2f5e3}{encerrando} ()
+\begin{DoxyCompactList}\small\item\em encerrando\+: Desconecta a máquina \end{DoxyCompactList}\item 
+void \hyperlink{class_main_window_aaa425b1554af3c1f58cc70b4815082ae}{timer\+Event} (Q\+Timer\+Event $\ast$event)
+\begin{DoxyCompactList}\small\item\em timer\+Event\+: A cada intervalo de tempo, estabelecidado pelo Timing, será gerado um dado. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_main_window_a8b244be8b7b7db1b08de2a2acb9409db}\label{class_main_window_a8b244be8b7b7db1b08de2a2acb9409db}} 
+{\bfseries Main\+Window} (Q\+Widget $\ast$parent=0)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A Classe \hyperlink{class_main_window}{Main\+Window} é a classe principal do Cliente\+\_\+\+Produtor. 
+
+Ela irá gerar dados aleatório de acordo com limites e timing estabelecidos pelo usuário. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_main_window_aaa425b1554af3c1f58cc70b4815082ae}\label{class_main_window_aaa425b1554af3c1f58cc70b4815082ae}} 
+\index{Main\+Window@{Main\+Window}!timer\+Event@{timer\+Event}}
+\index{timer\+Event@{timer\+Event}!Main\+Window@{Main\+Window}}
+\subsubsection{\texorpdfstring{timer\+Event}{timerEvent}}
+{\footnotesize\ttfamily void Main\+Window\+::timer\+Event (\begin{DoxyParamCaption}\item[{Q\+Timer\+Event $\ast$}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+timer\+Event\+: A cada intervalo de tempo, estabelecidado pelo Timing, será gerado um dado. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+mainwindow.\+h\item 
+mainwindow.\+cpp\end{DoxyCompactItemize}
